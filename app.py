@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
-from src.utils.data_processing import clean_data
-from src.utils.visualization import plot_fuel_type_count, plot_price_distribution
+from src.data_processing import clean_data
+from src.visualization import plot_fuel_type_count, plot_price_distribution
 
 #Cargar achivo desde fuente
 df = pd.read_csv('https://raw.githubusercontent.com/anfagudelogo-tpt/datasets/refs/heads/main/car_price_dataset.csv')

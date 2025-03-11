@@ -12,7 +12,8 @@ df = clean_data(df)
 #Título y descripción de la app
 st.title('Análisis descriptivo de vehículos')
 st.write(
-    'Esta aplicación permite explorar un dataset de vehículos, proporcionando estadísticas y visualizaciones intercativas.'
+    'Esta aplicación permite explorar un dataset de vehículos, '
+    'proporcionando estadísticas y visualizaciones intercativas.'
 )
 
 #Mostrar el resumen estadístico
@@ -38,5 +39,5 @@ else:
     st.write(f'### Datos filtrados para la marca {selected_brand}')
     st.dataframe(df_filtered.describe())
     fig_filtered = plot_fuel_type_count(df_filtered)
-    st.pyplot(fig_filtered)
+    st.pyplot( fig_filtered )
         
